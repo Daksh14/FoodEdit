@@ -1,6 +1,6 @@
-# FoodEdit
+# Meh.
 
-This absolutely useless userscript edits your last message to some random food ingredient as stackoverflow tag!
+This absolutely useless userscript edits your last message to meh.
 
 ## WHY?!
 
@@ -14,10 +14,7 @@ Some Javascript here, some request there, some... Oh? You were asking how to ins
 2. Click to [install](https://github.com/geisterfurz007/FoodEdit/raw/master/WaffleEdits.user.js)
 3. Tampermonkey/Greasemonkey should open up and give you the option to install the extension
 
-## Mhmm?
+## meh?
 
-Oh right! You have to use it somehow, don't you... Nothing simpler as that. Your chat will have a new button right next to your input area. Click it and bang! Cabbage! Or peas! Or whatever!
+Oh right! You have to use it somehow, don't you... Nothing simpler as that. Your chat will have a new button right next to your input area. Click it and bang! meh.
 
-![This is how it should look like](https://i.stack.imgur.com/KhHG6.png "This is how it should look like")
-
-Probably not as dark in the back but just as button.
