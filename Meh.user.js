@@ -23,7 +23,8 @@
     const mehButton = $("<button>");
     mehButton.attr("id", "meh-button").addClass("button").text(".meh").css({
         "position": "relative",
-        "background-color": "#C60030"
+        "background-color": "#C60030",
+        "margin-left" : "10px"
     });
 
     buttonsContainer.append(mehButton);
