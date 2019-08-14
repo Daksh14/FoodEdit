@@ -44,7 +44,7 @@
             },
             "data": {
                 "fkey": fkey,
-                "text": "[tag:" + theMessage + "]"
+                "text": theMessage
             }
         }
         $.ajax(requestSettings)
