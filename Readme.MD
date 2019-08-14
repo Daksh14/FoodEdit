@@ -1,6 +1,6 @@
 # Meh.
 
-This absolutely useless userscript edits your last message to some meh!
+This absolutely useless userscript edits your last message to meh.
 
 ## WHY?!
 
