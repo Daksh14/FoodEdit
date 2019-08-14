@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Waffles
-// @namespace    https://github.com/geisterfurz007
+// @name         meh.
+// @namespace    https://github.com/Daksh14
 // @version      0.6
-// @description  Make your last message to waffles!
-// @author       geisterfurz007
+// @description  Make your last message to meh.
+// @author       weegees
 // @match        https://chat.stackoverflow.com/rooms/*
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
@@ -20,43 +20,34 @@
     }
 
     const buttonsContainer = $("#chat-buttons");
-    const waffleButton = $("<button>");
-    waffleButton.attr("id", "waffle-button").addClass("button").text("Foodify last message").css({
+    const mehButton = $("<button>");
+    mehButton.attr("id", "meh-button").addClass("button").text(".meh").css({
         "position": "relative",
         "background-color": "#C60030"
     });
 
-    buttonsContainer.append(waffleButton);
-    
-    waffleButton.click(editLastMessage);
+    buttonsContainer.append(mehButton);
+
+    mehButton.click(editLastMessage);
 
     function editLastMessage() {
-        const ingredientsJson = "https://raw.githubusercontent.com/geisterfurz007/FoodEdit/master/ingredients.json";
-        
-        $.getJSON(ingredientsJson, function(data) {
-            data.push("waffles"); //Has to be in there!
-            const index = Math.floor(Math.random() * data.length);
-            const ingredient = data[index];
-            const cleanedIngredient = ingredient.toLowerCase().replace(/ /g, "-");
-            const fkey = $("#fkey").attr("value");
-            const messageElement = $(".monologue.mine").last().find(".message:last");
-            const messageId = messageElement.attr("id").split("-")[1];
+        const theMessage = 'meh.'
+        const fkey = $("#fkey").attr("value");
+        const messageElement = $(".monologue.mine").last().find(".message:last");
+        const messageId = messageElement.attr("id").split("-")[1];
 
-            const requestSettings = {
-                "method": "POST",
-                "url": "https://" + window.location.host + "/messages/" + messageId,
-                "headers": {
-                    "Content-Type": "application/x-www-form-urlencoded"
-                },
-                "data": {
-                    "fkey": fkey,
-                    "text": "[tag:" + cleanedIngredient + "]"
-                }
+        const requestSettings = {
+            "method": "POST",
+            "url": "https://" + window.location.host + "/messages/" + messageId,
+            "headers": {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+            "data": {
+                "fkey": fkey,
+                "text": "[tag:" + theMessage + "]"
             }
-
-            $.ajax(requestSettings)
-
-        });
+        }
+        $.ajax(requestSettings)
     }
 
 })();
