@@ -24,7 +24,7 @@
     mehButton.attr("id", "meh-button").addClass("button").text(".meh").css({
         "position": "relative",
         "background-color": "#C60030",
-        "margin-left" : "10px"
+        "margin-left" : "5px"
     });
 
     buttonsContainer.append(mehButton);
